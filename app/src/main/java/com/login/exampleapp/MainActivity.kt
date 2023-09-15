@@ -28,10 +28,7 @@ class MainActivity : AppCompatActivity() {
             val email = emailEditText.text.toString()
             val password = passwordEditText.text.toString()
 
-            if(email == null && password==null ) {
-                Toast.makeText(this, "Please Enter username and password", Toast.LENGTH_SHORT).show()
-
-            }else {
+            if(!(email != null && password != null)) {
 
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
@@ -46,6 +43,10 @@ class MainActivity : AppCompatActivity() {
 
                         }
                     }
+            }
+        else {
+                Toast.makeText(this, "Please Enter username and password", Toast.LENGTH_SHORT).show()
+
             }
         }
         phone.setOnClickListener {
