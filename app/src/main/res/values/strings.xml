@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Example App</string>
-    <string name="phone">Login with Phone Number</string>
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyBfog95xvKEvQp971vlNx8mvh2TttamYeE
-    </string>
-
-</resources>
